@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rect</title>
+</head>
+<body>
+    <!-- method 1 to print hello world using simple html tag -->
+    <!-- <h1>Hello world by html tag</h1> -->
+
+    <!-- method 2 to print hello world using JS-->
+     <!-- <div id="root"></div> -->
+     <!-- <script> -->
+        <!-- const heading=document.createElement("h1"); -->
+        <!-- heading.innerHTML="Hello world! by js"; -->
+
+        <!-- const root=document.getElementById("root") -->
+        <!-- root.appendChild(heading); -->
+     <!-- </script> -->
+
+    <!-- method 3 to print hello world using react -->
+    <div id="root"></div>
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- main code starts here for react -->
+     <script>
+            const heading=React.createElement("h1",{},"Hello world by react");
+            const root=ReactDOM.createRoot(document.getElementById("root"));
+            root.render(heading);
+     </script>
+</body>
+</html>
